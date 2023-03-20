@@ -8,5 +8,6 @@
   <%= price.unit_amount / 100 %>
   <%= price.currency %>
   <%= price.recurring.interval %>
+  <%= link_to 'Subscribe', checkout_path(price: price.id), method: :post, remote: true %>
   <br>
 <% end %>
