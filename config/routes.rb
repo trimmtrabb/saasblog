@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'posts#index'
   get 'pricing', to: 'static_pages#pricing'
   resources :posts
+  post 'checkout', to: 'checkout#create'
 end
